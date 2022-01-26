@@ -4,8 +4,8 @@ import { Card } from "../card/card.component.jsx";
 export const CardList = (props) => {
   return (
     <div className="card-list">
-      {props.monsters.map((el) => (
-        <Card key={el.id} monster={el} />
+      {props.monsters.map((monster) => (
+        <Card key={monster.id} monster={monster} />
       ))}
     </div>
   );
